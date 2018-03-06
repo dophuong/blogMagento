@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<config>
+    <acl>
+        <resources>
+            <all>
+                <title>Allow Everything</title>
+            </all>
+            <admin>
+                <children>
+                    <system>
+                        <children>
+                            <config>
+                                <children>
+                                    <blog translate="title" module="blog">
+                                        <title>Blog section</title>
+                                    </blog>
+                                </children>
+                            </config>
+                        </children>
+                    </system>
+                    <customer>
+                        <children>
+                            <user>
+                                <title>Blog user</title>
+                                <sort_order>10</sort_order>
+                            </user>
+                        </children>
+                    </customer>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+    <menu>
+        <system>
+            <children>
+                <blog translate="title" module="blog">
+                    <title>My Blog</title>
+                    <sort_order>10</sort_order>
+                    <action>adminhtml/blog_index</action>
+                </blog>
+            </children>
+        </system>
+        <customer>
+            <children>
+                <user translate="title" module="blog">
+                    <title>Blog User</title>
+                    <sort_order>10</sort_order>
+                    <action>adminhtml/blog_user</action>
+                </user>
+            </children>
+        </customer>
+    </menu>
+</config>

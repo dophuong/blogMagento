@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<layout>
+    <extend_index_index>
+        <reference name="root">
+            <action method="setTemplate">
+                <template>page/1column.phtml</template>
+            </action>
+        </reference>
+    </extend_index_index>
+    <blog_index_hello>
+        <remove name="header"/>
+        <reference name="root">
+            <action method="setTemplate">
+                <template>page/2columns-left.phtml</template>
+            </action>
+        </reference>
+    </blog_index_hello>
+</layout>
