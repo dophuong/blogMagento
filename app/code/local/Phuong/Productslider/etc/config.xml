@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<config>
+    <modules>
+        <Phuong_Productslider>
+            <version>0.0.1</version>
+        </Phuong_Productslider>
+    </modules>
+    <global>
+        <blocks>
+            <productslider>
+                <class>Phuong_Productslider_Block</class>
+            </productslider>
+        </blocks>
+        <helpers>
+            <productslider>
+                <class>Phuong_Productslider_Helper</class>
+            </productslider>
+        </helpers>
+    </global>
+    <admin>
+        <routers>
+            <adminhtml>
+                <args>
+                    <modules>
+                        <productslider before="Mage_Adminhtml">Phuong_Productslider_Adminhtml</productslider>
+                    </modules>
+                </args>
+            </adminhtml>
+        </routers>
+    </admin>
+</config>
